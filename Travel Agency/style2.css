@@ -1,379 +1,581 @@
-<!DOCTYPE html>
-<html lang="en">
-  <!--header section -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      fill="currentColor"
-      class="bi bi-three-dots"
-      viewBox="0 0 16 16"
-    >
-      <path
-        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-      />
-    </svg>
-    <link rel="stylesheet" href="style2.css" />
-    <title>Travel agency - In & Out</title>
-  </head>
-  <!--body of the website-->
-  <body>
-    <header>
-      <!--homepage-->
-      <div class="content">
-        <nav>
-          <h1>In&Out</h1>
-          <!--navigation section-->
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Special deals</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">register</a></li>
-          </ul>
-          <i class="bi bi-three-dots"></i>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-three-dots"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-            />
-          </svg>
-        </nav>
-        <p>Adventure Awaits!!</p>
-        <!---->
-        <div class="cont_bx">
-          <h2>TRAVEL . DISCOVER . EXPLORE</h2>
-          <h4>We Travel Together...</h4>
-          <!--search bar in home page-->
-          <input type="text" placeholder="Get Started..." />
-        </div>
-      </div>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-      <div class="trip_box">
-        <!--class to get input from user-->
-        <div class="search_box">
-          <div class="card">
-            <h4>
-              Location
-              <i class="bi bi-caret-down">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-caret-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
-                  /></svg
-              ></i>
-            </h4>
-            <input type="text" placeholder="enter your destination" />
-          </div>
-          <div class="card">
-            <h4>
-              Check In<i class="bi bi-caret-down">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-caret-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
-                  /></svg
-              ></i>
-            </h4>
-            <input type="date" />
-          </div>
-          <div class="card">
-            <h4>
-              Check Out<i class="bi bi-caret-down">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-caret-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
-                  /></svg
-              ></i>
-            </h4>
-            <input type="date" />
-          </div>
-          <div class="card">
-            <h4>
-              Members<i class="bi bi-caret-down">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-caret-down"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
-                  /></svg
-              ></i>
-            </h4>
-            <input type="number" placeholder="Number of people" />
-          </div>
-          <!--search bar-->
-          <input type="button" value="Find Tours" />
-        </div>
-        <!--class for displaying countries list along with images-->
-        <div class="travel_box">
-          <h4>Popular Destinations</h4>
-          <div class="cards">
-            <div class="card">
-              <h3>INDIA<img src="India.jpeg" alt="" /></h3>
-              <img src="taj.jpeg" alt="" />
-              <a href="">Explore Now</a>
-            </div>
-            <div class="card">
-              <h3>FRANCE<img src="France.jpeg" alt="" /></h3>
-              <img src="paris.jpeg" alt="" />
-              <a href="">Explore Now</a>
-            </div>
-            <div class="card">
-              <h3>SINGAPORE <img src="singapore.jpeg" alt="" /></h3>
-              <img src="bridge.jpeg" alt="" />
-              <a href="">Explore Now</a>
-            </div>
-            <div class="card">
-              <h3>HONKKONG <img src="Hong Kong.jpeg" alt="" /></h3>
-              <img src="stadium.jpeg" alt="" />
-              <a href="">Explore Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+body {
+  font-family: "poppins", sans-serif;
+}
+header {
+  width: 100%;
+  height: 120%;
+  margin: auto;
+}
+header .content nav {
+  width: 95%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .content nav h1 {
+  color: rgb(18, 48, 103);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 65px;
+}
+header .content nav h1:hover {
+  color: rgb(255, 255, 255);
+}
+header .content p {
+  color: rgb(18, 48, 103);
+  padding: 5px 5px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+header .content p:hover {
+  color: rgb(255, 255, 255);
+}
+header .content nav ul {
+  list-style: none;
+  display: flex;
+}
+header .content nav ul li {
+  padding: 3px 15px;
+}
+header .content nav ul li:nth-last-child(1) {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+header .content nav ul li:nth-last-child(1) a {
+  color: #fff;
+}
+header .content nav ul li a {
+  text-decoration: none;
+  color: #121213;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+header .content nav ul li a:hover {
+  color: rgb(53, 117, 236);
+}
+header nav .bi-three-dots {
+  display: none;
+}
+header .content {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+}
+header .content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("landing\ page.jpg") no-repeat center center/cover;
+  border-radius: 5px;
+  z-index: -1;
+}
+header .content .cont_bx {
+  max-width: 34%;
+  height: auto;
+  padding: 30px;
+}
+header .content .cont_bx h2 {
+  text-align: center;
+  font-size: 60px;
+  line-height: 40px;
+  font-weight: 10;
+  width: 270%;
+  color: rgb(250, 248, 249);
+  padding: 80px 5px 70px 0px;
+  margin-left: 25%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header .content .cont_bx h4 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 100px;
+  font-weight: 10;
+  width: 270%;
+  padding: 0px 65px 0px 0px;
+  margin-left: 35%;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header .content .cont_bx input {
+  width: 150%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #fff;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s linear;
+  opacity: 0.5;
+  font-size: 20px;
+  margin-left: 82%;
+  margin-bottom: 150px;
+}
+header .content .cont_bx input:hover {
+  background-color: rgb(251, 251, 251);
+  border: 2px solid rgb(21, 191, 238);
+  opacity: 1;
+}
+header .trip_box {
+  position: relative;
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+header .trip_box .search_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 25px rgb(113, 113, 113);
+  z-index: 1;
+}
+header .trip_box .search_box .card {
+  width: 200px;
+  height: 100%;
+}
+header .trip_box .search_box .card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 5px;
+  color: rgb(18, 48, 103);
+}
+header .trip_box .search_box .card h4 .bi {
+  position: absolute;
+  font-size: 13px;
+  margin: 2px 0px 0px 5px;
+  transition: 0.3s linear;
+}
+header .trip_box .search_box .card input {
+  margin-top: 1px;
+  padding: 5px 0px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+header .trip_box .search_box input[type="button"] {
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+header .trip_box .search_box input[type="button"]:hover {
+  background: grey;
+}
+header .trip_box .travel_box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 40px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  background: rgb(224, 243, 248);
+  border: 1px solid rgb(68, 183, 236);
+  box-shadow: 0px 25px 25px -10px rgb(224, 243, 248);
+}
+header .trip_box .travel_box::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgb(241, 241, 241, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+header .trip_box .travel_box h4 {
+  margin: 0;
+  padding: 40px 0px 0px 22px;
+  color: rgb(18, 48, 103);
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+header .trip_box .travel_box .cards {
+  max-width: 96%;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .trip_box .travel_box .cards .card {
+  width: 200px;
+  height: 190px;
+}
+header .trip_box .travel_box .cards .card h3 {
+  margin: 0px 0px 10px 0px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 50px;
+  color: rgb(18, 48, 103);
+}
+header .trip_box .travel_box .cards .card h3 img {
+  max-width: 25%;
+  height: 25px;
+  margin-left: 5px;
+}
+header .trip_box .travel_box .cards .card img {
+  width: 110%;
+  height: 92.5%;
+}
+header .trip_box .travel_box .cards .card a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-size: 12px;
+  transition: 0.3s linear;
+}
+header .trip_box .travel_box .cards .card a:hover {
+  background: grey;
+}
+.package {
+  width: 40%;
+  height: 570px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 80px;
+  background: rgb(231, 239, 223);
+}
+.package h3 {
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+}
+.package .transportation {
+  height: 120px;
+  width: 100%;
+  display: flex;
+}
+.package .transportation .t1 {
+  height: 120px;
+  width: 50%;
+  padding-top: 78px;
+  padding-left: 20px;
+}
+.package .transportation .t1 h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.package .transportation .t2 {
+  height: 120px;
+  width: 50%;
+  padding-left: 70px;
+}
+.package .transportation .t2 img {
+  border-radius: 70px;
+  height: 140px;
+  width: 140px;
+}
+.package .food {
+  height: 120px;
+  width: 100%;
+  display: flex;
+}
+.package .food .t1 {
+  height: 120px;
+  width: 50%;
+  padding-left: 90px;
+}
+.package .food .t1 img {
+  border-radius: 70px;
+  height: 140px;
+  width: 140px;
+}
+.package .food .t2 {
+  height: 120px;
+  width: 50%;
+  padding-top: 40px;
+}
+.package .food .t2 h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.package .guidecharge {
+  height: 120px;
+  width: 100%;
+  display: flex;
+}
+.package .guidecharge .t1 {
+  height: 120px;
+  width: 50%;
+  padding-top: 78px;
+  padding-left: 20px;
+}
+.package .guidecharge .t1 h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.package .guidecharge .t2 {
+  height: 120px;
+  width: 50%;
+  padding-left: 70px;
+}
+.package .guidecharge .t2 img {
+  border-radius: 70px;
+  height: 140px;
+  width: 140px;
+}
+.package .hotel {
+  height: 120px;
+  width: 100%;
+  display: flex;
+}
+.package .hotel .t1 {
+  height: 120px;
+  width: 50%;
+  padding-left: 90px;
+}
+.package .hotel .t1 img {
+  border-radius: 70px;
+  height: 140px;
+  width: 140px;
+}
+.package .hotel .t2 {
+  height: 120px;
+  width: 50%;
+  padding-top: 40px;
+}
+.package .hotel .t2 h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.guide {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  top: 40px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  background: rgb(7, 67, 5);
+}
+.guide .g1 h4 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 40px;
+  color: #fff;
+}
+.guide .g1 img {
+  width: 500px;
+  height: 350px;
+  margin-left: 80px;
+  margin-top: 120px;
+  margin-right: 30px;
+}
+.guide .g1 p {
+  font-size: 25px;
+  color: #fff;
+  margin-top: 70px;
+  margin-left: 20px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+.guide .g1 h5 {
+  font-size: 25px;
+  color: #fff;
+  margin-left: 40px;
+}
+.guide .g1 h5 .bi {
+  position: absolute;
+  font-size: 20px;
+  transition: 0.3s linear;
+}
+.accom {
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin: auto;
+  margin-top: 80px;
+  background: rgb(46, 2, 2);
+}
 
-    <!--class for article which decribes package-->
-    <div class="package">
-      <h3>Our Package Includes :</h3>
-      <div class="transportation">
-        <div class="t1">
-          <h4>FOOD</h4>
-        </div>
-        <div class="t2">
-          <img src="transport.jpeg" alt />
-        </div>
-      </div>
-      <div class="food">
-        <div class="t1">
-          <img src="food.jpeg" alt />
-        </div>
-        <div class="t2">
-          <h4>TRANSPORTATION</h4>
-        </div>
-      </div>
-      <div class="guidecharge">
-        <div class="t1">
-          <h4>ACCOMODATION</h4>
-        </div>
-        <div class="t2">
-          <img src="guide.jpeg" alt />
-        </div>
-      </div>
-      <div class="hotel">
-        <div class="t1">
-          <img src="accom.jpeg" alt />
-        </div>
-        <div class="t2">
-          <h4>GUIDE CHARGES</h4>
-        </div>
-      </div>
-    </div>
-
-    <!--class for article on giude facility-->
-    <div class="guide">
-      <div class="g1">
-        <h4>DISCOVER THE WORLD WITH OUR GUIDE</h4>
-        <p>
-          You can choose any country with good tourism agency but not a homely
-          EXPERIENCE.<br />
-          &#160; &#160; &#160; To have a INCREDIBLE , EXCITING and UNBILIEVABLE
-          vacation here we are <br />
-          <br />
-          &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;IN&OUT at your
-          service……
-        </p>
-        <h5>
-          20 Years of Experience &#160;<i class="bi bi-check2-circle"></i
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="currentColor"
-            class="bi bi-check2-circle"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-            />
-            <path
-              d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-            />
-          </svg>
-        </h5>
-        <h5>
-          150+ Tour Destination &#160;<i class="bi bi-check2-circle"></i
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="currentColor"
-            class="bi bi-check2-circle"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-            />
-            <path
-              d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-            />
-          </svg>
-        </h5>
-      </div>
-      <div class="g1">
-        <img src="discover.jpeg" alt="" />
-      </div>
-    </div>
-
-    <!--class for article on accomodation facility-->
-    <div class="accom">
-      <h4>WORLD CLASS ACCOMODATION</h4>
-      <div class="g1">
-        <img src="world class1.jpeg" alt="" />
-        <img src="world class2.jpeg" alt="" />
-        <img src="world class3.jpeg" alt="" />
-      </div>
-      <p>Luxury Hotel Rooms with Affordable Price &<br />Best Food</p>
-    </div>
-
-    <!--class for article on about us-->
-    <div class="aboutus">
-      <div class="a1">
-        <h1>About Us</h1>
-        <p>
-          <br />
-          Have you ever pictured what it would be like to live in that city
-          you're visiting?<br />
-          where would you choose to spend your saturday afternoons if you'd
-          lived there your entire life?<br />
-          It's time to start traveling like a local.<br />
-          Local you is dedicated to providing the most up-to-date, authentic
-          travel recommendations for you to enjoy when you travel.Remove the
-          stress and hours of research!<br />
-          plan you next itinerary with IN&OUT who share your preferences, enjoy
-          the things you do,and understand what you value in a trip.Now,you can
-          finally live like a local.
-          <br />&#160; &#160; &#160; &#160; &#160;so whats making you stop book
-          your destination NOW...
-        </p>
-      </div>
-      <div class="a1">
-        <img src="about us.jpeg" alt="" />
-      </div>
-    </div>
-
-    <!--footer section-->
-    <footer>
-      <h1>In&Out</h1>
-      <h2>
-        Subscribe & <br />
-        Get Special Discount
-      </h2>
-      <p>INDIA | FRANCE | SINGAPORE | HONK KONG</p>
-      <!--button for subscription-->
-      <div class="input">
-        <input type="text" placeholder="Enter your Email Address" />
-        <input type="button" value="subscribe" />
-      </div>
-      <div class="parts">
-        <!--Address and contact details-->
-        <div class="part1">
-          <h6>ADDRESS :</h6>
-          <p>
-            Unit.no.302 Creative Industrial Est.<br />N.N Road Tilak Nagar,<br />Bengaluru,110018,India,<br />Enquiry
-            Now : 040 2355 334.<br />Email : inandout@gmail.com.
-          </p>
-          <p>
-            FOLLOW US<br /><i class="bi bi-facebook"></i
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="currentColor"
-              class="bi bi-facebook"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-              />
-            </svg>
-            &#160; <i class="bi bi-instagram"></i
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="currentColor"
-              class="bi bi-instagram"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-              />
-            </svg>
-            &#160; <i class="bi bi-pinterest"></i
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="currentColor"
-              class="bi bi-pinterest"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"
-              />
-            </svg>
-          </p>
-        </div>
-        <!--navigation section in footer-->
-        <div class="part">
-          <h6>QUICK LINKS</h6>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Special deals</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">register</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <script src="app2.js"></script>
-  </body>
-</html>
+.accom .g1 img {
+  width: 360px;
+  height: 290px;
+  margin-left: 23px;
+  margin-top: 30px;
+  margin-right: 0px;
+}
+.accom h4 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 40px;
+  padding-top: 30px;
+  color: #fff;
+}
+.accom p {
+  font-size: 25px;
+  font-weight: 200;
+  margin-top: 30px;
+  margin-left: 20px;
+  color: #fff;
+}
+.aboutus {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+  top: 40px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  background-color: bisque;
+}
+.aboutus .a1 h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 40px;
+  color: #000;
+}
+.aboutus .a1 img {
+  width: 500px;
+  margin-left: 80px;
+  margin-top: 120px;
+  margin-right: 30px;
+}
+.aboutus .a1 p {
+  font-size: 25px;
+  color: #000;
+  margin-left: 20px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+footer {
+  width: 100%;
+  height: 615px;
+  background: rgb(71, 10, 97);
+  margin-top: 20px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+footer h1 {
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 65px;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+footer h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0%;
+  line-height: 30px;
+  font-weight: 600;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  margin: 0%;
+  margin-top: 25px;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 25px;
+}
+footer .input {
+  box-shadow: 0px 3px 20px -1px;
+  width: 500px;
+  margin-left: 500px;
+  margin-top: 20px;
+  display: flex;
+}
+footer .input input {
+  padding: 12px 15px;
+  outline: none;
+  font-size: 12px;
+  width: 300px;
+  background: #fff;
+}
+footer .parts {
+  width: 70%;
+  height: 350px;
+  margin-left: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .parts .part1 h6 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: lighter;
+  padding-left: 60px;
+  padding-top: 30px;
+}
+footer .parts .part1 p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-left: 80px;
+  text-align: center;
+}
+footer .parts .part1 p .i {
+  color: #ffffff;
+  position: absolute;
+}
+footer .parts.part {
+  width: 400px;
+  height: 200px;
+  margin: 40px;
+  margin-right: 300px;
+}
+footer .parts .part h6 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: lighter;
+  padding-top: 30px;
+}
+footer .parts .part ul {
+  padding-top: 20px;
+}
+footer .parts .part li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 100;
+  transition: 0.3s linear;
+  margin-right: 150px;
+}
+footer .parts .part li a:hover {
+  background: rgb(0, 0, 0);
+}
